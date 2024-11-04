@@ -1,10 +1,364 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction...</title>
-    <style></style>
+    <title>BasiC</title>
+    <link rel="icon" type="image/svg+xml" href="https://dist.localwu.top/Icon/ContentMatrix/icon.svg?v=202410210900">
+    <link rel="icon" type="image/png" href="https://dist.localwu.top/Icon/ContentMatrix/icon.png?v=202410210900">
+    <link rel="stylesheet" href="https://dist.localwu.top/CSS/Font/BasicFonts.css?v=202411021300">
+    <link rel="stylesheet" href="http://dist.localwu.top/Font/JetBrains/Mono/JetBrains_Mono.css">
+    <!-- <script data-goatcounter="https://localwu.goatcounter.com/count" async="" -->
+    <!-- src="https://dist.localwu.top/Script/WebAnalytics/GoatCounter.js"></script> -->
+    <style>
+        :root {
+            font-family: Inter, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-feature-settings: 'liga' 1, 'calt' 1;
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --text-disabled-color: #aaaaaa;
+            --background-revert-color: #000000;
+            --text-revert-color: #ffffff;
+            --text-disabled-revert-color: #666666;
+            --button-color: #eeeeee;
+            --button-border-color: #000000;
+            --button-hovered-color: #ffffff;
+            --button-revert-color: #555555;
+            --button-border-revert-color: #ffffff;
+            --button-hovered-revert-color: #222222;
+            --logo-svg-color: #000000;
+            --logo-svg-hoverd-color: #000000bb;
+            --light-background-color: #ffffff;
+            --light-text-color: #000000;
+            --light-text-disabled-color: #aaaaaa;
+            --light-background-revert-color: #000000;
+            --light-text-revert-color: #ffffff;
+            --light-text-disabled-revert-color: #666666;
+            --light-button-color: #eeeeee;
+            --light-button-border-color: #000000;
+            --light-button-hovered-color: #ffffff;
+            --light-button-revert-color: #555555;
+            --light-button-border-revert-color: #ffffff;
+            --light-button-hovered-revert-color: #222222;
+            --light-logo-svg-color: #000000;
+            --light-logo-svg-hoverd-color: #000000bb;
+            --dark-background-color: #000000;
+            --dark-text-color: #ffffff;
+            --dark-text-disabled-color: #666666;
+            --dark-background-revert-color: #ffffff;
+            --dark-text-revert-color: #000000;
+            --dark-text-disabled-revert-color: #aaaaaa;
+            --dark-button-color: #222222;
+            --dark-button-border-color: #ffffff;
+            --dark-button-hovered-color: #000000;
+            --dark-button-revert-color: #bbbbbb;
+            --dark-button-border-revert-color: #000000;
+            --dark-button-hovered-revert-color: #eeeeee;
+            --dark-logo-svg-color: #ffffff;
+            --dark-logo-svg-hoverd-color: #ffffffbb;
+        }
+
+        .lightMode {
+            --background-color: var(--light-background-color);
+            --text-color: var(--light-text-color);
+            --text-disabled-color: var(--light-text-disabled-color);
+            --background-revert-color: var(--light-background-revert-color);
+            --text-revert-color: var(--light-text-revert-color);
+            --text-disabled-revert-color: var(--light-text-disabled-revert-color);
+            --button-color: var(--light-button-color);
+            --button-border-color: var(--light-button-border-color);
+            --button-hovered-color: var(--light-button-hovered-color);
+            --button-revert-color: var(--light-button-revert-color);
+            --button-border-revert-color: var(--light-button-border-revert-color);
+            --button-hovered-revert-color: var(--light-button-hovered-revert-color);
+            --logo-svg-color: var(--light-logo-svg-color);
+            --logo-svg-hoverd-color: var(--light-logo-svg-hoverd-color);
+        }
+
+        .darkMode {
+            --background-color: var(--dark-background-color);
+            --text-color: var(--dark-text-color);
+            --text-disabled-color: var(--dark-text-disabled-color);
+            --background-revert-color: var(--dark-background-revert-color);
+            --text-revert-color: var(--dark-text-revert-color);
+            --text-disabled-revert-color: var(--dark-text-disabled-revert-color);
+            --button-color: var(--dark-button-color);
+            --button-border-color: var(--dark-button-border-color);
+            --button-hovered-color: var(--dark-button-hovered-color);
+            --button-revert-color: var(--dark-button-revert-color);
+            --button-border-revert-color: var(--dark-button-border-revert-color);
+            --button-hovered-revert-color: var(--dark-button-hovered-revert-color);
+            --logo-svg-color: var(--dark-logo-svg-color);
+            --logo-svg-hoverd-color: var(--dark-logo-svg-hoverd-color);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: var(--dark-background-color);
+                --text-color: var(--dark-text-color);
+                --text-disabled-color: var(--dark-text-disabled-color);
+                --background-revert-color: var(--dark-background-revert-color);
+                --text-revert-color: var(--dark-text-revert-color);
+                --text-disabled-revert-color: var(--dark-text-disabled-revert-color);
+                --button-color: var(--dark-button-color);
+                --button-border-color: var(--dark-button-border-color);
+                --button-hovered-color: var(--dark-button-hovered-color);
+                --button-revert-color: var(--dark-button-revert-color);
+                --button-border-revert-color: var(--dark-button-border-revert-color);
+                --button-hovered-revert-color: var(--dark-button-hovered-revert-color);
+                --logo-svg-color: var(--dark-logo-svg-color);
+                --logo-svg-hoverd-color: var(--dark-logo-svg-hoverd-color);
+            }
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            overflow-x: hidden;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            user-drag: none;
+            -webkit-tap-highlight-color: transparent;
+            letter-spacing: -.01em;
+            font-weight: 500;
+            transition: all 168ms ease;
+        }
+
+        .none {
+            display: none;
+        }
+
+        span {
+            color: var(--text-color);
+            transition: .1s ease;
+        }
+
+        span.title {
+            font-weight: 400;
+            font-size: xx-large;
+            font-feature-settings: 'ss02' 1;
+            letter-spacing: -.5em
+        }
+
+        span.tiptoe {
+            position: relative;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+
+        span.tiptoe:hover::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 55%;
+            width: 0;
+            height: 0;
+            border-left: .2em solid transparent;
+            border-right: .2em solid transparent;
+            border-bottom: .2em solid var(--text-color);
+            transform: translateX(-50%) translateY(.08em);
+        }
+
+        .whole {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: flex-start;
+            padding: 7vw 7vw 7vw 7vw;
+            width: 86vw;
+            height: fit-content;
+            justify-content: space-between;
+        }
+
+        /* ↑ HEADER START ↑ */
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* margin-right: 10vw; */
+        }
+
+        .spaceholder {
+            width: 64px;
+            height: 10vw;
+        }
+
+        .signboard {
+            min-width: 22em;
+            display: inline-block;
+            margin-left: -.1em;
+        }
+
+        .signboard span a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .signboard span.prefix {
+            line-height: 2em;
+            font-size: 1.6em;
+            font-family: JetBrains_Mono, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-weight: 400;
+            letter-spacing: -.1em;
+            margin-right: -0.1em;
+        }
+
+        .signboard span.suffix {
+            position: relative;
+            line-height: 2em;
+            font-size: 1.5em;
+            font-family: Inter, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-weight: 400;
+            letter-spacing: -.05em;
+        }
+
+        .signboard span.seperator {
+            position: relative;
+            font-size: 1.5em;
+            font-family: Inter, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-weight: 400;
+            letter-spacing: -.05em;
+        }
+
+        .signboard span.suffix.current::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 55%;
+            width: 0;
+            height: 0;
+            border-left: .2em solid transparent;
+            border-right: .2em solid transparent;
+            border-bottom: .2em solid var(--text-color);
+            transform: translateX(-50%) translateY(.08em);
+        }
+
+        .signboard span.minorText {
+            line-height: 1.6em;
+            font-size: .9em;
+            font-family: Inter, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-weight: 500;
+        }
+
+        .signboard span.projectSlogan {
+            line-height: 1.8em;
+        }
+
+        .signboard span.incidenceRelation {
+            position: relative;
+            font-size: .8em;
+        }
+
+        .headerNavigator {
+            margin-top: .8em;
+            width: calc(86vw - 22em);
+            min-width: 12em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: -.1em;
+        }
+
+        .headerNavigator span a {
+            font-family: JetBrains_Mono, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .headerNavigator span a:hover {
+            text-decoration: underline;
+        }
+
+        .headerNavigator span.arrow {
+            font-family: Inter, Noto_Sans, PingFang SC, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+            font-weight: 500;
+        }
+
+        .headerNavigator span.destination {
+            display: inline-block;
+            letter-spacing: -.05em;
+            line-height: 1.6em;
+            min-width: 8em;
+            margin-right: 1em;
+        }
+
+        /* ↑ HEADER END ↑ */
+
+        /* → CENTER START ← */
+
+        /* → CENTER END ← */
+
+        /* ↓ FOOTER START ↓ */
+
+        /* ↓ FOOTER END ↓ */
+    </style>
 </head>
-<body class="">
+
+<body class=" ">
+    <div class="whole">
+        <div class="header">
+            <div class="signboard">
+                <span class="u16nProjectName prefix">Basi</span>
+                <span class="suffix tiptoe current"><a href="/">C</a></span>
+                <span class="seperator">&nbsp;|&nbsp;</span>
+                <span class="suffix tiptoe"><a href="/C++">C++</a></span>
+                <span class="seperator">&nbsp;|&nbsp;</span>
+                <span class="suffix tiptoe"><a href="/Basic">Basic</a></span>
+                <br />
+                <span class="u16nProjectSlogan projectSlogan minorText">A Basic C/C++ Exercise Playground.</span>
+                <br />
+                <span class="u16nIncidenceRelation incidenceRelation minorText">A <span class="tiptoe"></span>™
+                    Member.</span>
+                <br /><br />
+            </div>
+            <div class="u16nHeaderNavigator headerNavigator">
+                <!-- <span class="destination"><span class="arrow">→</span><a href="/C/QuickPass">QuickPass</a></span>
+                <span class="destination"><span class="arrow">→</span><a href="/C/Charpter">Charpter</a></span>
+                <span class="destination"><span class="arrow">→</span><a href="/C/Exercise">Exercise</a></span>
+                <span class="destination"><span class="arrow">→</span><a href="/C/Contest">Contest</a></span>
+                <span class="destination"><span class="arrow">→</span><a href="/C/Playground">Playground</a></span> -->
+                <span class="destination"><a href="/C/QuickPass"><span class="arrow">→速通 </span>QuickPass</a></span>
+                <span class="destination"><a href="/C/Charpter"><span class="arrow">→章节 </span>Charpter</a></span>
+                <span class="destination"><a href="/C/Exercise"><span class="arrow">→练习 </span>Exercise</a></span>
+                <span class="destination"><a href="/C/Contest"><span class="arrow">→比赛 </span>Contest</a></span>
+                <span class="destination"><a href="/C/Playground"><span class="arrow">→操场 </span>Playground</a></span>
+                <!-- <span class="destination"><a href="/C/QuickPass"><span class="arrow">→速通 </span>速通</a></span>
+                <span class="destination"><a href="/C/Charpter"><span class="arrow">→章节 </span>章節</a></span>
+                <span class="destination"><a href="/C/Exercise"><span class="arrow">→练习 </span>練習</a></span>
+                <span class="destination"><a href="/C/Contest"><span class="arrow">→比赛 </span>比賽</a></span>
+                <span class="destination"><a href="/C/Playground"><span class="arrow">→操场 </span>操場</a></span> -->
+            </div>
+
+        </div>
+        <div class="center" style="height: fit-content; width: 100%;">
+
+        </div>
+        <div class="footer" style="margin-top: 128px;">
+
+            <span id="about" class="note">...</span>
+        </div>
+    </div>
+    <script>
+
+    </script>
+
 </body>
+
 </html>
